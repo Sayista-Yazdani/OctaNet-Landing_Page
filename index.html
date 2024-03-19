@@ -9,11 +9,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
-    <link rel="wesite-icon" href="pic/octanet.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+
+
+    
     <title>OctaNet-Landing Page</title>
+    <link rel="icon" href="pic/octanet.png" type="image/png">
 
 </head>
 
@@ -38,7 +40,7 @@
                 <div class="heading-title text-format">
                     Your Dream! Our destiny!
                 </div>
-                <div class="company-name  text-format">OCTANET</div>
+                <div class="company-name  text-format" id="element"></div>
             </div>
 
         </section>
@@ -180,7 +182,15 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["OCTANET"],
+          typeSpeed: 60,
+          backSpeed:60,
+          loop: true
+        });
+      </script>
 
 </body>
 
